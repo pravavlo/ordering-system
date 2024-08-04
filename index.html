@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Ordering System</title>
+      <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+      <nav class="navbar">
+          <div class="container">
+              <h1 class="navbar-brand">Food Ordering System</h1>
+          </div>
+      </nav>
+      <main class="container">
+          <h2>Order Your Food</h2>
+          <div class="food-item">
+              <label>
+                  <input type="checkbox" class="food-checkbox" data-name="Chana" data-price="25">
+                  Chana - Rs. 25
+              </label>
+          </div>
+          <div class="food-item">
+              <label>
+                  <input type="checkbox" class="food-checkbox" data-name="Aalu" data-price="25">
+                  Aalu - Rs. 25
+              </label>
+          </div>
+          <div class="food-item">
+              <label>
+                  <input type="checkbox" class="food-checkbox" data-name="Samosa" data-price="25">
+                  Samosa - Rs. 25
+              </label>
+          </div>
+          <div class="food-item">
+              <label>
+                  <input type="checkbox" class="food-checkbox" data-name="Egg" data-price="30">
+                  Egg - Rs. 30
+              </label>
+          </div>
+          <div class="food-item">
+              <label>
+                  Custom Food: <input type="text" id="customFoodName" placeholder="Food Name">
+                  Price: <input type="number" id="customFoodPrice" placeholder="Price">
+                  <button id="addCustomFood">Add</button>
+              </label>
+          </div>
+          <button id="clearOrder">Clear Order</button>
+          <button id="placeOrder">Place Order</button>
+        
+          <div id="orderSummary" class="order-summary">
+              <h3>Order Summary</h3>
+              <ul id="orderList"></ul>
+              <p>Total: Rs. <span id="totalPrice">0</span></p>
+          </div>
+      </main>
+      <script src="scripts.js"></script>
+  </body>
+  </html>
+  
